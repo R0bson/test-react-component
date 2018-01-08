@@ -1,0 +1,41 @@
+{
+  "name": "r0bson-react-component",
+  "version": "0.0.1",
+  "description": "Just a test component based on Formidable's builder",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "scripts": {
+    "postinstall": "builder run npm:postinstall",
+    "preversion": "builder run npm:preversion",
+    "version": "builder run npm:version",
+    "postversion": "builder run npm:postversion",
+    "postpublish": "builder run npm:postpublish",
+    "test": "builder run npm:test"
+  },
+  "dependencies": {
+    "builder": "^3.2.2",
+    "builder-react-component": "^0.4.4",
+    "storybook": "^1.0.0"
+  },
+  "devDependencies": {
+    "builder-react-component-dev": "^0.4.1",
+    "enzyme": "^2.9.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-addons-test-utils": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1"
+  },
+  "publishr": {
+    "dependencies": [
+      "^builder"
+    ],
+    "files": {
+      ".npmignore": ".npmignore.publishr"
+    },
+    "scripts": {
+      "postinstall": ""
+    }
+  }
+}
